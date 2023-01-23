@@ -1,0 +1,28 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping github.com -w 10
+PING github.com (140.82.114.3) 56(84) bytes of data.
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=245 time=19.5 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=245 time=17.0 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=245 time=18.5 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=4 ttl=245 time=17.1 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=5 ttl=245 time=16.9 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=6 ttl=245 time=17.0 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=7 ttl=245 time=17.1 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=8 ttl=245 time=17.0 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=9 ttl=245 time=16.8 ms
+64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=10 ttl=245 time=16.9 ms
+
+--- github.com ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9018ms
+rtt min/avg/max/mdev = 16.787/17.383/19.486/0.841 ms
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping 17.253.144.10 -w5
+PING 17.253.144.10 (17.253.144.10) 56(84) bytes of data.
+64 bytes from 17.253.144.10: icmp_seq=1 ttl=55 time=34.9 ms
+64 bytes from 17.253.144.10: icmp_seq=2 ttl=55 time=24.7 ms
+64 bytes from 17.253.144.10: icmp_seq=3 ttl=55 time=32.4 ms
+64 bytes from 17.253.144.10: icmp_seq=4 ttl=55 time=22.9 ms
+64 bytes from 17.253.144.10: icmp_seq=5 ttl=55 time=23.9 ms
+
+--- 17.253.144.10 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 22.910/27.762/34.873/4.896 ms
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~#
