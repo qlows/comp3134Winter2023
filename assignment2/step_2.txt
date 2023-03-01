@@ -1,0 +1,104 @@
+Command used 
+sudo tcpdump -i eth0 -s 0 -n 'tcp port 80'
+
+
+Source Host 193.32.162.159
+Source Port 54059
+Destination Host 159.203.12.21
+Destination Port 80
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 193.32.162.159
+Destination Port 54059
+
+Source Host 193.32.162.159
+Source Port 50786
+Destination Host 159.203.12.21
+Destination Port 80
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 89.248.165.204 
+Destination Port 54378
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 89.248.165.204 
+Destination Port 33886
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 89.248.165.204 
+Destination Port 44124
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 179.43.177.242 
+Destination Port 36474
+
+Source Host 64.225.109.82
+Source Port 56968
+Destination Host 159.203.12.21
+Destination Port 80
+
+Source Host 159.203.12.21
+Source Port 80
+Destination Host 139.99.9.160 
+Destination Port 43403
+
+
+-----------------------------------------------------------
+
+
+17:47:41.672315 IP 193.32.162.159.54059 > 159.203.12.21.80: Flags [S], seq 150492215, win 65535, length 0
+17:47:41.672393 IP 159.203.12.21.80 > 193.32.162.159.54059: Flags [S.], seq 1817791653, ack 150492216, win 64240, options [mss 1460], length 0
+17:47:41.798119 IP 193.32.162.159.54059 > 159.203.12.21.80: Flags [R], seq 150492216, win 0, length 0
+17:47:41.811500 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [S], seq 3681255027, win 29200, options [mss 1460,sackOK,TS val 215618992 ecr 0,nop,wscale 7], length 0
+17:47:41.811584 IP 159.203.12.21.80 > 193.32.162.159.50786: Flags [S.], seq 1211565049, ack 3681255028, win 65160, options [mss 1460,sackOK,TS val 3329026607 ecr 215618992,nop,wscale 7], length 0
+17:47:41.936463 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [.], ack 1, win 229, options [nop,nop,TS val 215619116 ecr 3329026607], length 0
+17:47:41.936464 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [P.], seq 1:425, ack 1, win 229, options [nop,nop,TS val 215619116 ecr 3329026607], length 424: HTTP: GET / HTTP/1.1
+17:47:41.936557 IP 159.203.12.21.80 > 193.32.162.159.50786: Flags [.], ack 425, win 506, options [nop,nop,TS val 3329026732 ecr 215619116], length 0
+17:47:41.937691 IP 159.203.12.21.80 > 193.32.162.159.50786: Flags [P.], seq 1:2595, ack 425, win 506, options [nop,nop,TS val 3329026733 ecr 215619116], length 2594: HTTP: HTTP/1.1 200 OK
+17:47:42.062253 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [.], ack 1449, win 251, options [nop,nop,TS val 215619242 ecr 3329026733], length 0
+17:47:42.062253 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [.], ack 2595, win 274, options [nop,nop,TS val 215619242 ecr 3329026733], length 0
+17:47:46.941409 IP 159.203.12.21.80 > 193.32.162.159.50786: Flags [F.], seq 2595, ack 425, win 506, options [nop,nop,TS val 3329031737 ecr 215619242], length 0
+17:47:47.065736 IP 193.32.162.159.50786 > 159.203.12.21.80: Flags [F.], seq 425, ack 2596, win 274, options [nop,nop,TS val 215624246 ecr 3329031737], length 0
+17:47:47.065830 IP 159.203.12.21.80 > 193.32.162.159.50786: Flags [.], ack 426, win 506, options [nop,nop,TS val 3329031861 ecr 215624246], length 0
+17:48:58.490975 IP 89.248.165.204.54378 > 159.203.12.21.80: Flags [S], seq 3908766216, win 64240, options [mss 1460,sackOK,TS val 3222856504 ecr 0,nop,wscale 7], length 0
+17:48:58.491052 IP 159.203.12.21.80 > 89.248.165.204.54378: Flags [S.], seq 4134171728, ack 3908766217, win 65160, options [mss 1460,sackOK,TS val 1131784503 ecr 3222856504,nop,wscale 7], length 0
+17:48:58.575658 IP 89.248.165.204.54378 > 159.203.12.21.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3222856589 ecr 1131784503], length 0
+17:48:58.985954 IP 89.248.165.204.54378 > 159.203.12.21.80: Flags [P.], seq 1:253, ack 1, win 502, options [nop,nop,TS val 3222856999 ecr 1131784503], length 252: HTTP: GET /sendgrid.env HTTP/1.1
+17:48:58.986062 IP 159.203.12.21.80 > 89.248.165.204.54378: Flags [.], ack 253, win 508, options [nop,nop,TS val 1131784998 ecr 3222856999], length 0
+17:48:58.986923 IP 159.203.12.21.80 > 89.248.165.204.54378: Flags [P.], seq 1:460, ack 253, win 508, options [nop,nop,TS val 1131784999 ecr 3222856999], length 459: HTTP: HTTP/1.1 404 Not Found
+17:48:58.987472 IP 159.203.12.21.80 > 89.248.165.204.54378: Flags [F.], seq 460, ack 253, win 508, options [nop,nop,TS val 1131785000 ecr 3222856999], length 0
+17:48:59.071165 IP 89.248.165.204.54378 > 159.203.12.21.80: Flags [.], ack 460, win 501, options [nop,nop,TS val 3222857084 ecr 1131784999], length 0
+17:48:59.106111 IP 89.248.165.204.54378 > 159.203.12.21.80: Flags [F.], seq 253, ack 461, win 501, options [nop,nop,TS val 3222857119 ecr 1131785000], length 0
+17:48:59.106179 IP 159.203.12.21.80 > 89.248.165.204.54378: Flags [.], ack 254, win 508, options [nop,nop,TS val 1131785118 ecr 3222857119], length 0
+17:49:06.281954 IP 89.248.165.204.44124 > 159.203.12.21.80: Flags [S], seq 2290137177, win 64240, options [mss 1460,sackOK,TS val 3222864295 ecr 0,nop,wscale 7], length 0
+17:49:06.282158 IP 159.203.12.21.80 > 89.248.165.204.44124: Flags [S.], seq 1838217188, ack 2290137178, win 65160, options [mss 1460,sackOK,TS val 1131792294 ecr 3222864295,nop,wscale 7], length 0
+17:49:06.365774 IP 89.248.165.204.44124 > 159.203.12.21.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3222864379 ecr 1131792294], length 0
+17:49:06.425882 IP 89.248.165.204.44124 > 159.203.12.21.80: Flags [P.], seq 1:248, ack 1, win 502, options [nop,nop,TS val 3222864439 ecr 1131792294], length 247: HTTP: GET /config.json HTTP/1.1
+17:49:06.425973 IP 159.203.12.21.80 > 89.248.165.204.44124: Flags [.], ack 248, win 508, options [nop,nop,TS val 1131792438 ecr 3222864439], length 0
+17:49:06.426489 IP 159.203.12.21.80 > 89.248.165.204.44124: Flags [P.], seq 1:460, ack 248, win 508, options [nop,nop,TS val 1131792439 ecr 3222864439], length 459: HTTP: HTTP/1.1 404 Not Found
+17:49:06.426677 IP 159.203.12.21.80 > 89.248.165.204.44124: Flags [F.], seq 460, ack 248, win 508, options [nop,nop,TS val 1131792439 ecr 3222864439], length 0
+17:49:06.510854 IP 89.248.165.204.44124 > 159.203.12.21.80: Flags [.], ack 460, win 501, options [nop,nop,TS val 3222864524 ecr 1131792439], length 0
+17:49:06.510854 IP 89.248.165.204.44124 > 159.203.12.21.80: Flags [F.], seq 248, ack 461, win 501, options [nop,nop,TS val 3222864524 ecr 1131792439], length 0
+17:49:06.510930 IP 159.203.12.21.80 > 89.248.165.204.44124: Flags [.], ack 249, win 508, options [nop,nop,TS val 1131792523 ecr 3222864524], length 0
+17:49:14.300412 IP 89.248.165.204.33886 > 159.203.12.21.80: Flags [S], seq 360461507, win 64240, options [mss 1460,sackOK,TS val 3222872314 ecr 0,nop,wscale 7], length 0
+17:49:14.300496 IP 159.203.12.21.80 > 89.248.165.204.33886: Flags [S.], seq 2276340321, ack 360461508, win 65160, options [mss 1460,sackOK,TS val 1131800313 ecr 3222872314,nop,wscale 7], length 0
+17:49:14.385116 IP 89.248.165.204.33886 > 159.203.12.21.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 3222872399 ecr 1131800313], length 0
+17:49:14.399582 IP 89.248.165.204.33886 > 159.203.12.21.80: Flags [P.], seq 1:257, ack 1, win 502, options [nop,nop,TS val 3222872413 ecr 1131800313], length 256: HTTP: GET /.env HTTP/1.1
+17:49:14.399666 IP 159.203.12.21.80 > 89.248.165.204.33886: Flags [.], ack 257, win 508, options [nop,nop,TS val 1131800412 ecr 3222872413], length 0
+17:49:14.400375 IP 159.203.12.21.80 > 89.248.165.204.33886: Flags [P.], seq 1:460, ack 257, win 508, options [nop,nop,TS val 1131800413 ecr 3222872413], length 459: HTTP: HTTP/1.1 404 Not Found
+17:49:14.400715 IP 159.203.12.21.80 > 89.248.165.204.33886: Flags [F.], seq 460, ack 257, win 508, options [nop,nop,TS val 1131800413 ecr 3222872413], length 0
+17:49:14.488327 IP 89.248.165.204.33886 > 159.203.12.21.80: Flags [.], ack 460, win 501, options [nop,nop,TS val 3222872498 ecr 1131800413], length 0
+17:49:14.515850 IP 89.248.165.204.33886 > 159.203.12.21.80: Flags [F.], seq 257, ack 461, win 501, options [nop,nop,TS val 3222872528 ecr 1131800413], length 0
+17:49:14.515918 IP 159.203.12.21.80 > 89.248.165.204.33886: Flags [.], ack 258, win 508, options [nop,nop,TS val 1131800528 ecr 3222872528], length 0
+
+
+
+
+
+
+

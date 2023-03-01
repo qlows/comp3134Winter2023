@@ -1,0 +1,81 @@
+
+
+*************************UDP PACKETS**************************************************************************************
+
+COMMAND EXECUTED: sudo tcpdump -i eth0 -n udp
+
+OUTPUT:
+
+1. 21:02:57.944628 IP 167.99.183.102.59294 > 67.207.67.3.53: 41854+ SRV? _http._tcp.ppa.launchpad.net. (46)
+2. 21:01:36.911320 IP 167.99.183.102.40315 > 91.189.94.4.123: NTPv4, Client, length 48
+3. 21:01:36.998849 IP 91.189.94.4.123 > 167.99.183.102.40315: NTPv4, Server, length 48
+4. 21:02:57.942990 IP 167.99.183.102.48958 > 67.207.67.2.53: 13478+ [1au] SRV? _http._tcp.ppa.launchpad.net. (57)
+5. 21:02:57.943091 IP 167.99.183.102.59294 > 67.207.67.3.53: 41854+ [1au] SRV? _http._tcp.ppa.launchpad.net. (57)
+6. 21:02:57.943176 IP 167.99.183.102.60941 > 67.207.67.2.53: 49864+ [1au] SRV? _http._tcp.ppa.launchpad.net. (57)
+7. 21:02:57.944271 IP 67.207.67.2.53 > 167.99.183.102.48958: 13478 NXDomain 0/1/1 (121)
+8. 21:02:57.944417 IP 167.99.183.102.48958 > 67.207.67.2.53: 13478+ SRV? _http._tcp.ppa.launchpad.net. (46)
+9. 21:02:57.944531 IP 67.207.67.3.53 > 167.99.183.102.59294: 41854 NXDomain 0/1/1 (121)
+10. 21:02:57.944531 IP 67.207.67.2.53 > 167.99.183.102.60941: 49864 NXDomain 0/1/1 (121)
+
+
+INFORMATION:
+
+Packet 1
+Source Host: 167.99.183.102
+Source Port: 59294
+Destination Host: 67.207.67.3
+Destination Port: 53
+
+Packet 2
+Source Host: 167.99.183.102
+Source Port: 40315
+Destination Host: 91.189.94.4
+Destination Port: 123
+
+Packet 3
+Source Host: 91.189.94.4
+Source Port: 123
+Destination Host: 167.99.183.102
+Destination Port: 40315
+
+Packet 4
+Source Host: 167.99.183.102
+Source Port: 48958
+Destination Host: 67.207.67.2
+Destination Port: 53
+
+Packet 5
+Source Host: 167.99.183.102
+Source Port: 59294
+Destination Host: 67.207.67.3
+Destination Port: 53
+
+Packet 6
+Source Host: 167.99.183.102
+Source Port: 60941
+Destination Host: 67.207.67.2
+Destination Port: 53
+
+Packet 7
+Source Host: 67.207.67.2
+Source Port: 53
+Destination Host: 167.99.183.102
+Destination Port: 48958
+
+Packet 8
+Source Host: 167.99.183.102
+Source Port: 48958
+Destination Host: 67.207.67.2
+Destination Port: 53
+
+Packet 9
+Source Host: 67.207.67.3
+Source Port: 53
+Destination Host: 167.99.183.102
+Destination Port: 59294
+
+Packet 10
+Source Host: 67.207.67.2
+Source Port: 53
+Destination Host: 167.99.183.102
+Destination Port: 60941 
